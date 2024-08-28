@@ -50,9 +50,11 @@
    ```
 
 ## Пример тестовых запросов
+
 ### Создание файла
 **Тип запроса**: POST  
-**Адрес**: `http://localhost:8080/api/files`
+
+**URL**: `http://localhost:8080/api/files`
 
 **Тело запроса**:
 ```json
@@ -63,7 +65,7 @@
 }
 ```
 
-**Пример запроса**: `http://localhost:8080/api/files`
+**Пример запроса**:
 ```json
 {  
   "title": "Test File",  
@@ -72,21 +74,21 @@
 }
 ```
 
+
 ### Получение файла
 **Тип запроса**: GET  
-**Адрес**: `http://localhost:8080/api/files/{id}`
+
+**URL**: `http://localhost:8080/api/files/{id}`
 
 **Параметры**:
 - `id`: идентификатор файла, который необходимо получить.
 
-**Пример запроса**: `http://localhost:8080/api/files/1`
 
 ### Получение списка всех файлов
 **Тип запроса**: GET  
-**Адрес**: `http://localhost:8080/api/files?size={size}&page={page}`
+
+**URL**: `http://localhost:8080/api/files?size={size}&page={page}`
 
 **Параметры**:
 - `size`: количество записей на странице;
 - `page`: номер отображаемой страницы.
-
-**Пример запроса**: `http://localhost:8080/api/files?size=2&page=0`
